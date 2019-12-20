@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://data/models/armature_model_orig_v2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/prop_tool/player/PropToolDisplayPlayer.gd" type="Script" id=2]
+
+[node name="DisplayPlayer" type="Entity" groups=[
+"players",
+]]
+input_ray_pickable = false
+collision_layer = 3
+collision_mask = 3
+character_skeleton_path = NodePath("character")
+script = ExtResource( 2 )
+
+[node name="character" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00126277, 0.085327, -0.000325084 )
+use_threads = false
