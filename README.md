@@ -1,5 +1,7 @@
 # Prop Tool
 
+## This addon is deprecated, as Voxelman now has it built in.
+
 This is an addon for https://github.com/Relintai/voxelman, to help with creating/editing props.
 
 Props are 3d obects in the world, they can contain lights (VoxelmanLight), meshes (MehDataResorce), and other Props, and scenes.
